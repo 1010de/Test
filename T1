@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int ArrayMax(int *, int);
+int main(void)
+{
+    int * a;
+    int i, n;
+
+    printf("Array Number: ");
+    scanf("%d", &n);
+    a = malloc(sizeof(int) * n);
