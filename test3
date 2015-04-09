@@ -11,11 +11,8 @@ int main(void)
     while(Sentence[i] != '\0')
         i++;
     Space = i;
-    /*
-    下面的for循环处理除首单词之外的单词，找到末尾字母位置i复制给space，向前找到空格位置i，for循环到space，输出单词。
-    然后把i复制给space，如此反复。
-    */
-    for(; i >= 0; i--)
+   
+    for(; i >= 0; i--)    //for循环实习颠倒
     {
         if(Sentence[i] == ' ')
         {
@@ -24,7 +21,7 @@ int main(void)
             Space = i;
         }
     }
-    //剩下一个首单词
+    //剩一个首单词
     for(k = i + 1; k <= Space; k++)
         putchar(Sentence[k]);
 
